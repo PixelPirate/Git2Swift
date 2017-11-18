@@ -114,6 +114,7 @@ extension Repository {
         opts.fetch_opts.prune = GIT_FETCH_PRUNE_UNSPECIFIED
         opts.fetch_opts.update_fetchhead = 1
         opts.fetch_opts.callbacks.version = 1
+        opts.fetch_opts.proxy_opts.version = 1
 
         // Set fetch progress
         setTransfertProgressHandler(options: &opts.fetch_opts.callbacks, progress: progress)

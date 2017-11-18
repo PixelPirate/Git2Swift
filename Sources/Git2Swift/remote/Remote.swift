@@ -49,6 +49,7 @@ public class Remote {
         fetchOptions.callbacks.version = 1
         fetchOptions.prune = GIT_FETCH_PRUNE_UNSPECIFIED
         fetchOptions.update_fetchhead = 1
+        fetchOptions.proxy_opts.version = 1
         
         // Set progress
         setTransfertProgressHandler(options: &fetchOptions.callbacks, progress: progress)
